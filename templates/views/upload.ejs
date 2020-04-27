@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style1.css">
+        <title>Upload</title>
+    </head>
+    <body class=bdy>
+        <div class='main-content'>
+        <%- include ("../partials/header") %>     
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <div>
+            <input type="file" name="filetoupload">
+            <input type="submit">
+        </div>
+        </form>
+        </div>
+        <%- include ("../partials/footer") %>
+    </body>
+</html>
